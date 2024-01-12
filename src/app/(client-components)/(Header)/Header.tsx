@@ -7,7 +7,7 @@ import AvatarDropdown from "./AvatarDropdown";
 import MenuBar from "@/shared/MenuBar";
 import SwitchDarkMode from "@/shared/SwitchDarkMode";
 import SearchDropdown from "./SearchDropdown";
-
+import imgLogo from "@/images/logo.png";
 interface Header3Props {
   className?: string;
 }
@@ -20,7 +20,7 @@ const Header: FC<Header3Props> = ({ className = "" }) => {
           <div className="flex-1 flex justify-between">
             {/* Logo (lg+) */}
             <div className="relative z-10 flex flex-1 items-center">
-              <Logo />
+              <Logo img={imgLogo} />
             </div>
 
             {/* NAV */}
