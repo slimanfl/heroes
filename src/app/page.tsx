@@ -1,7 +1,7 @@
 import React from "react";
 import BgGlassmorphism from "@/components/BgGlassmorphism";
 import { TaxonomyType } from "@/data/types";
-import SectionHero from "./(server-components)/SectionHero";
+
 const DEMO_CATS: TaxonomyType[] = [
   {
     id: "1",
