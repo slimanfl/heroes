@@ -3,7 +3,7 @@
 import { PathName } from "@/routers/types";
 import { Popover, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { FC, Fragment, useEffect, useState } from "react";
@@ -11,7 +11,7 @@ import React, { FC, Fragment, useEffect, useState } from "react";
 // <--- NavItemType --->
 export interface MegamenuItem {
   id: string;
-  image: string;
+  image: StaticImageData;
   title: string;
   items: NavItemType[];
 }

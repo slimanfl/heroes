@@ -1,13 +1,17 @@
 import { MegamenuItem, NavItemType } from "@/shared/Navigation/NavigationItem";
 import ncNanoId from "@/utils/ncNanoId";
 import { Route } from "@/routers/types";
+import spaceSection from "@/images/sections/space.jpg";
+import idolSection from "@/images/sections/idol.png";
+import clanSection from "@/images/sections/clan.jpg";
+import heroSection from "@/images/sections/hero.png";
+import kartingSection from "@/images/sections/karting.jpg";
 import __megamenu from "./jsons/__megamenu.json";
 
 const megaMenuDemo: MegamenuItem[] = [
   {
     id: ncNanoId(),
-    image:
-      "https://images.pexels.com/photos/1591373/pexels-photo-1591373.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    image: spaceSection,
     title: "Company",
     items: __megamenu.map((i) => ({
       id: ncNanoId(),
@@ -17,8 +21,7 @@ const megaMenuDemo: MegamenuItem[] = [
   },
   {
     id: ncNanoId(),
-    image:
-      "https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    image: idolSection,
     title: "App Name",
     items: __megamenu.map((i) => ({
       id: ncNanoId(),
@@ -28,8 +31,7 @@ const megaMenuDemo: MegamenuItem[] = [
   },
   {
     id: ncNanoId(),
-    image:
-      "https://images.pexels.com/photos/5059013/pexels-photo-5059013.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    image: clanSection,
     title: "City",
     items: __megamenu.map((i) => ({
       id: ncNanoId(),
@@ -39,8 +41,7 @@ const megaMenuDemo: MegamenuItem[] = [
   },
   {
     id: ncNanoId(),
-    image:
-      "https://images.pexels.com/photos/5159141/pexels-photo-5159141.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    image: heroSection,
     title: "Contruction",
     items: __megamenu.map((i) => ({
       id: ncNanoId(),
@@ -50,8 +51,7 @@ const megaMenuDemo: MegamenuItem[] = [
   },
   {
     id: ncNanoId(),
-    image:
-      "https://images.pexels.com/photos/7473041/pexels-photo-7473041.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    image: kartingSection,
     title: "Country",
     items: __megamenu.map((i) => ({
       id: ncNanoId(),
@@ -64,19 +64,43 @@ const megaMenuDemo: MegamenuItem[] = [
 const demoChildMenus: NavItemType[] = [
   {
     id: ncNanoId(),
-    href: "/",
-    name: "Online booking",
+    href: "/heroes-section",
+    name: "Hero",
   },
   {
     id: ncNanoId(),
-    href: "/home-2",
-    name: "Real estate",
+    href: "/karting-section",
+    name: "Karting Station",
     isNew: true,
   },
   {
     id: ncNanoId(),
-    href: "/home-3",
-    name: "Home 3",
+    href: "/idol-land-section",
+    name: "Idol Land",
+    isNew: true,
+  },
+  {
+    id: ncNanoId(),
+    href: "/space-planet-section",
+    name: "Space Planet",
+    isNew: true,
+  },
+  {
+    id: ncNanoId(),
+    href: "/fun-land-section",
+    name: "Fun Land",
+    isNew: true,
+  },
+  {
+    id: ncNanoId(),
+    href: "/event-station-section",
+    name: "Event Station",
+    isNew: true,
+  },
+  {
+    id: ncNanoId(),
+    href: "/clan-station-section",
+    name: "clan Station",
     isNew: true,
   },
 ];
@@ -166,120 +190,23 @@ const templatesChildrenMenus: NavItemType[] = [
 export const NAVIGATION_DEMO: NavItemType[] = [
   {
     id: ncNanoId(),
-    href: "/",
+    href: "/home",
     name: "Home",
-    type: "dropdown",
-    children: demoChildMenus,
     isNew: true,
   },
   {
     id: ncNanoId(),
     href: "/",
-    name: "Five columns",
-    type: "megaMenu",
+    name: "Sections",
+    type: "dropdown",
+    children: demoChildMenus,
     megaMenu: megaMenuDemo,
   },
-  {
-    id: ncNanoId(),
-    href: "/listing-stay",
-    name: "Listing Page",
-    type: "dropdown",
-    children: [
-      {
-        id: ncNanoId(),
-        href: "/listing-stay",
-        name: "Stay listings",
-        type: "dropdown",
-        children: [
-          { id: ncNanoId(), href: "/listing-stay", name: "Stay page" },
-          {
-            id: ncNanoId(),
-            href: "/listing-stay-map",
-            name: "Stay page (map)",
-          },
-          { id: ncNanoId(), href: "/listing-stay-detail", name: "Stay Detail" },
-        ],
-      },
-
-      //
-      {
-        id: ncNanoId(),
-        href: "/listing-experiences",
-        name: "Experiences listings",
-        type: "dropdown",
-        children: [
-          {
-            id: ncNanoId(),
-            href: "/listing-experiences",
-            name: "Experiences page",
-          },
-          {
-            id: ncNanoId(),
-            href: "/listing-experiences-map",
-            name: "Experiences page (map)",
-          },
-          {
-            id: ncNanoId(),
-            href: "/listing-experiences-detail",
-            name: "Experiences Detail",
-          },
-        ],
-      },
-
-      //
-      {
-        id: ncNanoId(),
-        href: "/listing-car",
-        name: "Cars listings",
-        type: "dropdown",
-        children: [
-          { id: ncNanoId(), href: "/listing-car", name: "Cars page" },
-          { id: ncNanoId(), href: "/listing-car-map", name: "Cars page (map)" },
-          { id: ncNanoId(), href: "/listing-car-detail", name: "Car Detail" },
-        ],
-      },
-
-      //
-      {
-        id: ncNanoId(),
-        href: "/listing-real-estate",
-        name: "Real Estate Listings",
-        type: "dropdown",
-        children: [
-          {
-            id: ncNanoId(),
-            href: "/listing-real-estate",
-            name: "Real Estate Listings",
-          },
-          {
-            id: ncNanoId(),
-            href: "/listing-real-estate-map",
-            name: "Real Estate Maps",
-          },
-        ],
-      },
-      //
-      {
-        id: ncNanoId(),
-        href: "/listing-flights",
-        name: "Flights listings",
-      },
-    ],
-  },
-  {
-    id: ncNanoId(),
-    href: "/author",
-    name: "Templates",
-    type: "dropdown",
-    children: templatesChildrenMenus,
-  },
 
   {
     id: ncNanoId(),
-    href: "/blog",
-    name: "Other pages",
-    type: "dropdown",
-    children: otherPageChildMenus,
+    href: "/contact",
+    name: "contact us",
   },
 ];
 
