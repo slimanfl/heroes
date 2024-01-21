@@ -5,7 +5,7 @@ import SectionHero from "./(server-components)/SectionHero";
 import SectionSliderNewCategories from "@/components/SectionSliderNewCategories";
 import imageHero from "@/images/hero-2.jpeg";
 import imageKarting from "@/images/karting-3.jpg";
-import imageClan from "@/images/clan.jpg";
+// import imageClan from "@/images/clan.jpg";
 import imageEvent from "@/images/event.jpg";
 import imageSpace from "@/images/space.jpg";
 import imageDes from "@/images/disney.jpg";
@@ -70,14 +70,6 @@ const DEMO_CATS: TaxonomyType[] = [
     count: 0,
     thumbnail: imageBliards,
   },
-  {
-    id: "8",
-    href: "/clans-section",
-    name: "Clans",
-    taxonomy: "category",
-    count: 0,
-    thumbnail: imageClan,
-  },
 ];
 const DEMO_CATS1: TaxonomyType[] = [
   {
@@ -135,14 +127,6 @@ const DEMO_CATS1: TaxonomyType[] = [
     taxonomy: "category",
     count: 0,
     thumbnail: imageBliards,
-  },
-  {
-    id: "8",
-    href: "/clans-section",
-    name: "Clans",
-    taxonomy: "category",
-    count: 0,
-    thumbnail: imageClan,
   },
 ];
 
