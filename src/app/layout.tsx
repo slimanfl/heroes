@@ -27,8 +27,8 @@ export default function RootLayout({
         <ClientCommons />
         <SiteHeader />
         {children}
-        {/* <FooterNav />
-        <Footer /> */}
+        <FooterNav />
+        <Footer />
       </body>
     </html>
   );

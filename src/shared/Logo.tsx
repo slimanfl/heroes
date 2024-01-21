@@ -19,14 +19,14 @@ const Logo: React.FC<LogoProps> = ({ className = "w-24" }) => {
       */}
       <Image
         className="hidden dark:block"
-        height={75}
+        height={60}
         src={imgLogo}
         alt="Logo"
       />
       <Image
         className="block dark:hidden"
         src={imgLogoLight}
-        height={75}
+        height={60}
         alt="Logo"
       />
     </Link>

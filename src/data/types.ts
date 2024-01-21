@@ -14,7 +14,7 @@ export interface TaxonomyType {
   name: string;
   href: Route<string>;
   count?: number;
-  thumbnail?: string;
+  thumbnail?: any;
   desc?: string;
   color?: TwMainColor | string;
   taxonomy: "category" | "tag";

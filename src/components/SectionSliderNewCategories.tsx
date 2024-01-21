@@ -100,12 +100,12 @@ const DEMO_CATS: TaxonomyType[] = [
 ];
 
 const SectionSliderNewCategories: FC<SectionSliderNewCategoriesProps> = ({
-  heading = "Suggestions for discovery",
-  subHeading = "Popular places to recommends for you",
+  heading = "Sections for discovery",
+  subHeading = "Popular Section to recommends for you",
   className = "",
   itemClassName = "",
   categories = DEMO_CATS,
-  itemPerRow = 5,
+  itemPerRow = 4,
   categoryCardType = "card3",
   sliderStyle = "style1",
 }) => {
@@ -171,7 +171,7 @@ const SectionSliderNewCategories: FC<SectionSliderNewCategoriesProps> = ({
 
   return (
     <div className={`nc-SectionSliderNewCategories ${className}`}>
-      <Heading desc={subHeading} isCenter={sliderStyle === "style2"}>
+      <Heading desc={subHeading} isCenter={true}>
         {heading}
       </Heading>
       <MotionConfig

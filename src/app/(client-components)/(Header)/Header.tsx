@@ -16,7 +16,7 @@ interface Header3Props {
 const Header: FC<Header3Props> = ({ className = "" }) => {
   return (
     <>
-      <header className="pt-4">
+      <header className="">
         <div className="relative px-4 lg:container h-24 flex">
           <div className="flex-1 flex justify-between">
             <div className="relative z-10 flex flex-1 items-center ">

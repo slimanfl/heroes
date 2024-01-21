@@ -15,13 +15,16 @@ export interface WidgetFooterMenu {
 const widgetMenus: WidgetFooterMenu[] = [
   {
     id: "5",
-    title: "Getting started",
+    title: "Section",
     menus: [
-      { href: "#", label: "Installation" },
-      { href: "#", label: "Release Notes" },
-      { href: "#", label: "Upgrade Guide" },
-      { href: "#", label: "Browser Support" },
-      { href: "#", label: "Editor Support" },
+      { href: "/heroes-section", label: "Heroes & Coffe" },
+      { href: "/karting-section", label: "Karting" },
+      { href: "/event-section", label: "Event Party" },
+      { href: "/disney-world", label: "Disney Resturant" },
+      { href: "/spaceplanet-section", label: "Space Planet" },
+      { href: "/idolland-section", label: "Idol Land" },
+      { href: "/bliards-section", label: "Bliards & Coffe" },
+      { href: "/clans-section", label: "Clans" },
     ],
   },
   {
