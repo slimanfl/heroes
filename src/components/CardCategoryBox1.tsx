@@ -14,7 +14,7 @@ const CardCategoryBox1: FC<CardCategoryBox1Props> = ({
   className = "",
   taxonomy,
 }) => {
-  const { count, name, thumbnail, href = "/" } = taxonomy;
+  const {  name, thumbnail, href = "/" } = taxonomy;
   return (
     <Link
       href={href}
@@ -23,7 +23,7 @@ const CardCategoryBox1: FC<CardCategoryBox1Props> = ({
       <Badge
         className="absolute right-2 top-2"
         color="gray"
-        name={convertNumbThousand(count)}
+        name={'kkk'}
       />
 
       <div className="relative flex-shrink-0 w-24 h-24 rounded-full overflow-hidden">

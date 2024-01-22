@@ -13,6 +13,14 @@ import NextBtn from "./NextBtn";
 import { variants } from "@/utils/animationVariants";
 import { useWindowSize } from "react-use";
 
+import station2 from "@/images/sections/2.jpg";
+import station3 from "@/images/sections/3.jpg";
+import station5 from "@/images/sections/5.jpg";
+import station6 from "@/images/sections/6.jpg";
+import station7 from "@/images/sections/7.jpg";
+import carting from "@/images/sections/carting.jpg";
+import MKH_5493 from "@/images/sections/MKH_5493.jpg";
+
 export interface SectionSliderNewCategoriesProps {
   className?: string;
   itemClassName?: string;
@@ -20,7 +28,7 @@ export interface SectionSliderNewCategoriesProps {
   subHeading?: string;
   categories?: TaxonomyType[];
   categoryCardType?: "card3" | "card4" | "card5";
-  itemPerRow?: 4 | 5;
+  itemPerRow?: 1| 4 | 5;
   sliderStyle?: "style1" | "style2";
 }
 
@@ -28,74 +36,58 @@ const DEMO_CATS: TaxonomyType[] = [
   {
     id: "1",
     href: "/listing-stay-map",
-    name: "Nature House",
+    name: "",
     taxonomy: "category",
-    count: 17288,
-    thumbnail:
-      "https://images.pexels.com/photos/2581922/pexels-photo-2581922.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
+    thumbnail:station3,
   },
   {
     id: "2",
     href: "/listing-stay-map",
-    name: "Wooden house",
+    name: "",
     taxonomy: "category",
-    count: 2118,
-    thumbnail:
-      "https://images.pexels.com/photos/2351649/pexels-photo-2351649.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+    thumbnail:station2,
   },
   {
     id: "3",
     href: "/listing-stay-map",
-    name: "Houseboat",
+    name: "",
     taxonomy: "category",
-    count: 36612,
-    thumbnail:
-      "https://images.pexels.com/photos/962464/pexels-photo-962464.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+    thumbnail:station5,
   },
   {
     id: "4",
     href: "/listing-stay-map",
-    name: "Farm House",
+    name: "",
     taxonomy: "category",
-    count: 18188,
-    thumbnail:
-      "https://images.pexels.com/photos/248837/pexels-photo-248837.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+    thumbnail:station7,
   },
   {
     id: "5",
     href: "/listing-stay-map",
-    name: "Dome House",
+    name: "",
     taxonomy: "category",
-    count: 22288,
-    thumbnail:
-      "https://images.pexels.com/photos/3613236/pexels-photo-3613236.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    thumbnail:station5,
   },
   {
     id: "6",
     href: "/listing-stay-map",
-    name: "Dome House",
+    name: "",
     taxonomy: "category",
-    count: 188288,
-    thumbnail:
-      "https://images.pexels.com/photos/14534337/pexels-photo-14534337.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    thumbnail:carting,
   },
   {
     id: "7",
     href: "/listing-stay-map",
-    name: "Wooden house",
+    name: "",
     taxonomy: "category",
-    count: 2118,
-    thumbnail:
-      "https://images.pexels.com/photos/2351649/pexels-photo-2351649.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+    thumbnail: MKH_5493,
   },
   {
     id: "8",
     href: "/listing-stay-map",
-    name: "Wooden Dome",
+    name: "",
     taxonomy: "category",
-    count: 515,
-    thumbnail:
-      "https://images.pexels.com/photos/9039238/pexels-photo-9039238.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    thumbnail:station6,
   },
 ];
 

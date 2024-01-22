@@ -13,7 +13,7 @@ const CardCategory3: FC<CardCategory3Props> = ({
   className = "",
   taxonomy,
 }) => {
-  const { count, name, href = "/", thumbnail } = taxonomy;
+  const {  name, href = "/", thumbnail } = taxonomy;
   return (
     <Link href={href} className={`nc-CardCategory3 flex flex-col ${className}`}>
       <div
@@ -37,7 +37,7 @@ const CardCategory3: FC<CardCategory3Props> = ({
         <span
           className={`block mt-1.5 text-sm text-neutral-6000 dark:text-neutral-400`}
         >
-          {convertNumbThousand(count || 0)} properties
+          
         </span>
       </div>
     </Link>

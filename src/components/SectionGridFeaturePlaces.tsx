@@ -7,7 +7,7 @@ import StayCard from "./StayCard";
 import StayCard2 from "./StayCard2";
 
 // OTHER DEMO WILL PASS PROPS
-const DEMO_DATA: StayDataType[] = DEMO_STAY_LISTINGS.filter((_, i) => i < 8);
+const DEMO_DATA: StayDataType[] = DEMO_STAY_LISTINGS.filter((_, i) => i < 4);
 
 //
 export interface SectionGridFeaturePlacesProps {
@@ -23,10 +23,8 @@ export interface SectionGridFeaturePlacesProps {
 const SectionGridFeaturePlaces: FC<SectionGridFeaturePlacesProps> = ({
   stayListings = DEMO_DATA,
   gridClass = "",
-  heading = "Featured places to stay",
-  subHeading = "Popular places to stay that Chisfis recommends for you",
   headingIsCenter,
-  tabs = ["New York", "Tokyo", "Paris", "London"],
+  tabs = ["Meals", "drinks", "Games", "child-care"],
   cardType = "card2",
 }) => {
   const renderCard = (stay: StayDataType) => {
@@ -50,9 +48,8 @@ const SectionGridFeaturePlaces: FC<SectionGridFeaturePlacesProps> = ({
     <div className="nc-SectionGridFeaturePlaces relative">
       <HeaderFilter
         tabActive={"New York"}
-        subHeading={subHeading}
         tabs={tabs}
-        heading={heading}
+      
       />
       <div
         className={`grid gap-6 md:gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ${gridClass}`}

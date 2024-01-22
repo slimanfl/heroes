@@ -10,16 +10,12 @@ import { ArrowRightIcon } from "@heroicons/react/24/outline";
 export interface HeaderFilterProps {
   tabActive: string;
   tabs: string[];
-  heading: ReactNode;
-  subHeading?: ReactNode;
   onClickTab?: (item: string) => void;
 }
 
 const HeaderFilter: FC<HeaderFilterProps> = ({
   tabActive,
   tabs,
-  subHeading = "",
-  heading = "Latest Articles 🎈",
   onClickTab = () => {},
 }) => {
   const [tabActiveState, setTabActiveState] = useState(tabActive);
@@ -35,7 +31,6 @@ const HeaderFilter: FC<HeaderFilterProps> = ({
 
   return (
     <div className="flex flex-col mb-8 relative">
-      <Heading desc={subHeading}>{heading}</Heading>
       <div className="flex items-center justify-between">
         <Nav
           className="sm:space-x-2"

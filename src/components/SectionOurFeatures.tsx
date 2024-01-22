@@ -1,5 +1,7 @@
 import React, { FC } from "react";
-import rightImgPng from "@/images/our-features.png";
+import heroEntry from "@/images/sections/3.jpg";
+import heroCafe from "@/images/sections/5.jpg";
+
 import Image, { StaticImageData } from "next/image";
 import Badge from "@/shared/Badge";
 
@@ -11,7 +13,7 @@ export interface SectionOurFeaturesProps {
 
 const SectionOurFeatures: FC<SectionOurFeaturesProps> = ({
   className = "lg:py-14",
-  rightImg = rightImgPng,
+  rightImg = heroEntry,
   type = "type1",
 }) => {
   return (
@@ -21,51 +23,69 @@ const SectionOurFeatures: FC<SectionOurFeaturesProps> = ({
       } ${className}`}
       data-nc-id="SectionOurFeatures"
     >
-      <div className="flex-grow">
-        <Image src={rightImg} alt="" />
-      </div>
+   
       <div
-        className={`max-w-2xl flex-shrink-0 mt-10 lg:mt-0 lg:w-2/5 ${
+        className={`max-w-2xl flex-shrink-0 mt-10 mr-10 lg:mt-0 lg:w-2/5 ${
           type === "type1" ? "lg:pl-16" : "lg:pr-16"
         }`}
       >
-        <span className="uppercase text-sm text-gray-400 tracking-widest">
-          BENnefits
-        </span>
-        <h2 className="font-semibold text-4xl mt-5">Happening cities </h2>
+       
+        <h2 className="font-semibold text-4xl mt-5">OUR FEATURES</h2>
 
         <ul className="space-y-10 mt-16">
           <li className="space-y-4">
-            <Badge name="Advertising" />
             <span className="block text-xl font-semibold">
-              Cost-effective advertising
-            </span>
+            Extensive Game Selection
+             </span>
             <span className="block mt-5 text-neutral-500 dark:text-neutral-400">
-              With a free listing, you can advertise your rental with no upfront
-              costs
+             Our gaming center boasts a wide range of games and activities to cater to all interests and age groups.
+             From classic arcade games to the latest virtual reality experiences,
+             we have something for everyone.
             </span>
           </li>
           <li className="space-y-4">
-            <Badge color="green" name="Exposure " />
             <span className="block text-xl font-semibold">
-              Reach millions with Chisfis
+            State-of-the-Art Equipment
             </span>
             <span className="block mt-5 text-neutral-500 dark:text-neutral-400">
-              Millions of people are searching for unique places to stay around
-              the world
+             We pride ourselves on providing the latest gaming technology and equipment. Our high-quality gaming consoles,
+           immersive virtual reality setups, and well-maintained game machines ensure a seamless and enjoyable gaming experience.
             </span>
           </li>
           <li className="space-y-4">
-            <Badge color="red" name="Secure" />
             <span className="block text-xl font-semibold">
-              Secure and simple
+            Dedicated Party Rooms
             </span>
             <span className="block mt-5 text-neutral-500 dark:text-neutral-400">
-              A Holiday Lettings listing gives you a secure and easy way to take
-              bookings and payments online
+            Celebrate special occasions with us! Our dedicated party rooms provide the perfect setting for birthday parties or group events. Enjoy a private space, personalized decorations, 
+            and access to a variety of games and activities for an unforgettable celebration.
             </span>
           </li>
+          <li className="space-y-4">
+            <span className="block text-xl font-semibold">
+            Family-Friendly Environmen
+            </span>
+            <span className="block mt-5 text-neutral-500 dark:text-neutral-400">
+             Our gaming center is designed to be a family-friendly destination. 
+            We offer games and activities suitable for all ages, ensuring that everyone, from kids to adults, can have a fantastic time together.
+            </span>
+          </li>
+          <li className="space-y-4">
+            <span className="block text-xl font-semibold">
+            Skilled Staff and Assistance
+            </span>
+            <span className="block mt-5 text-neutral-500 dark:text-neutral-400">
+             Our friendly and knowledgeable staff members are always available to assist you. Whether you need help choosing a game, setting up your equipment, or understanding game rules,
+             our team is here to ensure you have a smooth and enjoyable gaming experience.
+            </span>
+          </li>
+    
         </ul>
+      </div>
+      <div className="flex-grow ">
+        <Image  src={rightImg} alt="" />
+        <Image className="mt-10"  src={heroCafe} alt="" />
+
       </div>
     </div>
   );

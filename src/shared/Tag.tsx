@@ -16,9 +16,7 @@ const Tag: FC<TagProps> = ({ className = "", tag, hideCount = false }) => {
       href={tag.href as Route}
     >
       {`${tag.name}`}
-      {!hideCount && (
-        <span className="text-xs font-normal"> ({tag.count})</span>
-      )}
+     
     </Link>
   );
 };
