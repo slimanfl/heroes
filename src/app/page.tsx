@@ -1,12 +1,13 @@
 import React from "react";
+import { DEMO_POSTS } from "@/data/posts";
 import SectionOurFeatures from "@/components/SectionOurFeatures";
 import SectionGridFeaturePlaces from "@/components/SectionGridFeaturePlaces";
 import SectionHero from "./(server-components)/SectionHero";
 import SectionBecomeAnAuthor from "@/components/SectionBecomeAnAuthor";
 import BackgroundSection from "@/components/BackgroundSection";
 import BgGlassmorphism from "@/components/BgGlassmorphism";
+import SectionMagazine5 from "@/components/SectionMagazine5";
 import SectionSliderNewCategories from "@/components/SectionSliderNewCategories";
-import SectionSliderNewCategories2 from "@/components/SectionSliderNewCategories2";
 import imageHero from "@/images/hero-2.jpeg";
 import imageKarting from "@/images/karting-3.jpg";
 import imageEvent from "@/images/event.jpg";
@@ -69,6 +70,10 @@ const DEMO_CATS: TaxonomyType[] = [
   },
 ];
 
+const POSTS = DEMO_POSTS;
+
+const MAGAZINE1_POSTS = POSTS.filter((_, i) => i >= 0 && i < 8);
+
 function PageHome() {
   return (
     <main className="nc-PageHome relative overflow-hidden">
@@ -107,6 +112,7 @@ function PageHome() {
       <div className="container relative space-y-24 mb-24 lg:space-y-28 lg:mb-28">
 
       <SectionGridFeaturePlaces cardType="card2" />
+      <SectionMagazine5 posts={MAGAZINE1_POSTS} />
 
      </div>
 
