@@ -5,6 +5,7 @@ import ButtonPrimary from "@/shared/ButtonPrimary";
 import HeaderFilter from "./HeaderFilter";
 import StayCard from "./StayCard";
 import StayCard2 from "./StayCard2";
+import Heading from "@/shared/Heading";
 
 // OTHER DEMO WILL PASS PROPS
 const DEMO_DATA: StayDataType[] = DEMO_STAY_LISTINGS.filter((_, i) => i < 4);
@@ -46,6 +47,9 @@ const SectionGridFeaturePlaces: FC<SectionGridFeaturePlacesProps> = ({
 
   return (
     <div className="nc-SectionGridFeaturePlaces relative">
+        <Heading  isCenter={true}>
+        Our Services
+       </Heading>
       <HeaderFilter
         tabActive={"New York"}
         tabs={tabs}

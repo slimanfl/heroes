@@ -17,7 +17,7 @@ const SectionHero: FC<SectionHeroProps> = ({ className = "" }) => {
       <div className="flex flex-col lg:flex-row ">
         <div  className="flex-shrink-0 lg:w-1/2 flex flex-col items-start space-y-8 sm:space-y-10  xl:pr-14 lg:mr-10 xl:mr-0" style ={{ marginTop: '180px'}}>
           <h2 className="font-medium  text-4xl md:text-5xl xl:text-7xl !leading-[114%] ">
-            Heros' Station
+          HeroStation
           </h2>
           <span className="text-base md:text-lg text-neutral-500 dark:text-neutral-400">
           WELCOME TO OUR EXCITING WORLD WHER YOU CAN MAKE FUN AND INTERSTING IN OUR SECTIONS
