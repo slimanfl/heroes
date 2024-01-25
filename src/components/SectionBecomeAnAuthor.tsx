@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import rightImgDemo from "@/images/sections/carting.jpg";
+import rightImgDemo from "@/images/sections/HeroStation2.png";
 import Logo from "@/shared/Logo";
 import Image from "next/image";
 
