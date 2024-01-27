@@ -5,7 +5,7 @@ import SocialsShare from "@/shared/SocialsShare";
 import { DEMO_POSTS } from "@/data/posts";
 import Link from "next/link";
 import Image from "next/image";
-import station2 from "@/images/sections/2.jpg";
+import HeroStation3 from "@/images/sections/HeroStation3.png";
 
 
 export interface Card12Props {
@@ -23,7 +23,7 @@ const Card12: FC<Card12Props> = ({
     <div className={`nc-Card12 group relative flex flex-col ${className}`}>
   
         <Image
-          src={station2}
+          src={HeroStation3}
           alt={title}
           sizes="(max-width: 768px) 100vw, 400px"
           width={500}

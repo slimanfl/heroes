@@ -75,7 +75,7 @@ const demoChildMenus: NavItemType[] = [
   },
   {
     id: ncNanoId(),
-    href: "/idol-land-section",
+    href: "/idolland-section",
     name: "Idol Land",
     isNew: true,
   },

@@ -67,6 +67,7 @@ const Button: FC<ButtonProps> = ({
         className={`${CLASSES} `}
         onClick={onClick}
         rel={targetBlank ? "noopener noreferrer" : undefined}
+        style={{background:'#dfcd19fa'}}
       >
         {children || `This is Link`}
       </Link>
@@ -79,9 +80,12 @@ const Button: FC<ButtonProps> = ({
       className={`${CLASSES}`}
       onClick={onClick}
       type={type}
-    >
+      style={{background:'#dfcd19fa'}}
+
+          >
       {loading && _renderLoading()}
       {children || `This is Button`}
+      
     </button>
   );
 };

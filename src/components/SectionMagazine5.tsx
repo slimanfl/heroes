@@ -18,7 +18,7 @@ const SectionMagazine5: FC<SectionMagazine5Props> = ({ posts }) => {
         {posts[0] && <Card12 post={posts[0]} />}
         <div className="grid gap-6 md:gap-8">
           {posts
-            .filter((_, i) => i < 4 && i > 0)
+            .filter((_, i) => i < 5 && i > 0)
             .map((item, index) => (
               <Card13 key={index} post={item} />
             ))}
