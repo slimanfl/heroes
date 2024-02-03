@@ -2,7 +2,7 @@ import { MegamenuItem, NavItemType } from "@/shared/Navigation/NavigationItem";
 import ncNanoId from "@/utils/ncNanoId";
 import { Route } from "@/routers/types";
 
-import heroIntry from "@/images/sections/hero.png";
+import heroIntry from "@/images/hero.png";
 import __megamenu from "./jsons/__megamenu.json";
 
 const megaMenuDemo: MegamenuItem[] = [
