@@ -7,15 +7,16 @@ import Badge from "@/shared/Badge";
 
 export interface SectionOurFeaturesProps {
   className?: string;
-  rightImg?: StaticImageData;
+  rightImg?: StaticImageData | string;
   type?: "type1" | "type2";
 }
 
 const SectionOurFeatures: FC<SectionOurFeaturesProps> = ({
   className = "lg:py-14",
-  rightImg = heroEntry,
+  rightImg = 'https://lh3.googleusercontent.com/pw/ABLVV86L4RLzGg31ZSJ-OkwIr5HFugRws8EYzu3__rGb9dnVqaAsb5OXlEQ0wuIC8VDs-dyeqhAtrw8PFaHww2PV0gXV-PXGHb5nYxV3WpdRNuHexZfh7q6xa6kZWtCNrHuOalXf2v5w1aH41jHLSgidd3nqm9MX2SpJPdVuhAPLVc6Eh0Ms5fLeH4Vdk5EBII6hkAh8CxNYus5-002abIUq17r_42r-eER7sQHxRvu_U4rxQpaNhoiaUGuCiAVO9Gbb-6Rkor6T1nWWbLT_s-OZJ8aX5GZuEM_Zk8ylD2HL67v95LQTbH-5Y1wy_x7Nbv-ZgAPDO9eD4nrf187YmTwPGKUAmpGllU6eROXeLjigMP3X3-E_ocfOUuo5pgcBOkOpzHCvV7-0aIzAGsFbTd7QUzgtaB_EUpLHA61XtvBPUWWh0a9phC634e0a9O3GRZTnhqL2-IGZ-k5JBefQbxkvdH53q0yISc9_G1_k_VcU1jFWRaqp3pVJOYcPjWXLbvRwsbbD1Wf6gRXPsN6QsI6csizD9PB-ba_gQzCSQVdLXgTE5gTrfwLuwdjwCD49g8cpDC5g3ZXKiGpjTW8_g11ZhhrqVgqRIHcm9C3TiPSkDYIZc3Wg8IEBzCFi9iYPFUMUhyReMzam65Ik_jR3qc9pI-5OYX_2J97b9VITDinSwRMihjQcdbfJbnGf9wcjFhVnVl3YCFlbShZK99754ePLCjPWKnPaqGMCCjotIAcwoc-VNnZjHyX1OLqHwQ5TrGEODCUoWi6faq9F9D0TYZ0YfMFKPgGoVpLU-iFxVLm8z7W1V5vLqGNbckoOAmdBAz2Rj_yILj7XQTOLY3gJ1VIzIlcGz3-GO2xzhe9M61gcqtADN8tZogmkY2fVkq5vs5w1LdjRo59q3akzMjZLHU53P8lFwik=w1640-h923-s-no-gm?authuser=0',
   type = "type1",
 }) => {
+  let heroCafe ='https://lh3.googleusercontent.com/pw/ABLVV84WjuSCoLuS5_iSVHuLAYRmIhFBUHu_PCQXIxA9T6wBAJoPG1yU47EEs12TQzsgKTfKX5fUdU6DvSr0Y8dtlz8ZpbjYfdVExbGzJwmuDe9teu1Hl1O8GpXgYsRZz4mceKaHCWrNB7ppmkHQJknmR4mqH0dxAdFAu3vj2iJh14ExD4Er84QkXFoYewn_HimtC32k1O7FEB_GYpHtUOJACHtB2HV3IuldwMIf8KDnyf3a3O-TrI_xO_liOicJopkD6Z7i3XDIOtC-RBIL6RQjRcK8epRZSBY568KI6su47NDGkNM6b10UH4GqQ-X_A_b87WHwSVnE856ev9ZvO0tySpyGdBN4Fkr8i39a1yqS9NjtyeMCr0YVnq8UaMOrFvW4FeVw3nBiu1MdyypIRhu60PIaeBTSwXP8LcbItJoMARIqsqyhu40PJywNGutMARVLXmL_Px0wK55CwSzPvZfIeiUWqgiJbASJHueeVzJlERs3xsVwenWUgT_EMWlJb3RCMsiWOobooKtEMs_eZi1DJwFKCX0w3CM840GF130cgc0sc-FIyhZ_1p7CCxf-sQ3HMnckrK9R_ohIp4mzYXYwQpF_Nrk13BFP9VHrwUrPypSY_63pf8HuOaKvtAkAhojk2MOH1foRbLPF8rFLn0d_TnvwIWogHrSPtd-q_dj1dvljbbKc7ZAC0_FVtKdlwOL1U-sYlDEI6N6wN4bvP-LJy3Nuz4WhrZ9AjnDsOy9VI3hwggl6mAiFwu-HE4BLWYE2QoWwXf9OcBFCGFM4tfBQe0zT-rr1NdrmEplmP9pNqbXm8QG4SDzv_G5vuroa7s4-2-nbpUE08MZCfDTx8MaoFzkfCRD88BdU1ykXpebGAAMfTqVMSRtTR300_eQxwpJ5ulyTRSTtlw-uzLyb4wSdImUy3tY=w1280-h853-s-no-gm?authuser=0'
   return (
     <div
       className={`nc-SectionOurFeatures relative flex flex-col items-center ${
@@ -83,8 +84,8 @@ const SectionOurFeatures: FC<SectionOurFeaturesProps> = ({
         </ul>
       </div>
       <div className="flex-grow ">
-        <Image  src={rightImg} alt="" />
-        <Image className="mt-10"  src={heroCafe} alt="" />
+        <Image  src={rightImg} alt="" width={800} height={500} />
+        <Image className="mt-10"  src={heroCafe} alt=""  width={800} height={500} />
 
       </div>
     </div>
