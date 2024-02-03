@@ -1,17 +1,14 @@
 import { MegamenuItem, NavItemType } from "@/shared/Navigation/NavigationItem";
 import ncNanoId from "@/utils/ncNanoId";
 import { Route } from "@/routers/types";
-import spaceSection from "@/images/sections/space.jpg";
-import idolSection from "@/images/sections/idol.png";
-import clanSection from "@/images/sections/clan.jpg";
-import heroSection from "@/images/sections/hero.png";
-import kartingSection from "@/images/sections/karting.jpg";
+
+import heroIntry from "@/images/sections/heroIntry.jpg";
 import __megamenu from "./jsons/__megamenu.json";
 
 const megaMenuDemo: MegamenuItem[] = [
   {
     id: ncNanoId(),
-    image: spaceSection,
+    image: heroIntry,
     title: "Company",
     items: __megamenu.map((i) => ({
       id: ncNanoId(),
@@ -21,7 +18,7 @@ const megaMenuDemo: MegamenuItem[] = [
   },
   {
     id: ncNanoId(),
-    image: idolSection,
+    image: heroIntry,
     title: "App Name",
     items: __megamenu.map((i) => ({
       id: ncNanoId(),
@@ -31,7 +28,7 @@ const megaMenuDemo: MegamenuItem[] = [
   },
   {
     id: ncNanoId(),
-    image: clanSection,
+    image: heroIntry,
     title: "City",
     items: __megamenu.map((i) => ({
       id: ncNanoId(),
@@ -41,7 +38,7 @@ const megaMenuDemo: MegamenuItem[] = [
   },
   {
     id: ncNanoId(),
-    image: heroSection,
+    image: heroIntry,
     title: "Contruction",
     items: __megamenu.map((i) => ({
       id: ncNanoId(),
@@ -51,7 +48,7 @@ const megaMenuDemo: MegamenuItem[] = [
   },
   {
     id: ncNanoId(),
-    image: kartingSection,
+    image: heroIntry,
     title: "Country",
     items: __megamenu.map((i) => ({
       id: ncNanoId(),

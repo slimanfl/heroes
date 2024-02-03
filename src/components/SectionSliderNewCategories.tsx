@@ -14,7 +14,7 @@ import { variants } from "@/utils/animationVariants";
 import { useWindowSize } from "react-use";
 
 import station2 from "@/images/sections/2.jpg";
-import station3 from "@/images/sections/3.jpg";
+import station3 from "@/images/sections/heroIntry.jpg";
 import station5 from "@/images/sections/5.jpg";
 import station6 from "@/images/sections/6.jpg";
 import station7 from "@/images/sections/7.jpg";

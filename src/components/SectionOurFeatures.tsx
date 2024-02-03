@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import heroEntry from "@/images/sections/3.jpg";
+import heroEntry from "@/images/sections/heroIntry.jpg";
 import heroCafe from "@/images/sections/5.jpg";
 
 import Image, { StaticImageData } from "next/image";
