@@ -25,34 +25,34 @@ export interface SectionSliderNewCategoriesProps {
   sliderStyle?: "style1" | "style2";
 }
 
-const DEMO_CATS: TaxonomyType[] = [
+const IDOL: TaxonomyType[] = [
   {
     id: "1",
     href: "/listing-stay-map",
     name: "",
     taxonomy: "category",
-    thumbnail:'https://lh3.googleusercontent.com/pw/ABLVV86-YCsCpeF0rWoxAGN8WvhLjNgVhURjD5L38J1tDnOkFFdtZofDy0jXXcWw5gtUE84qv2HVERwK0Rv8iLTLe2NvEG7yqjlgyANaSlsfIaxtbTl9l8Upq5mMt-RyUDqYTBYtF_qnyjyi34mBxCEuERPR=w1280-h853-s-no-gm?authuser=0',
+    thumbnail:'https://lh3.googleusercontent.com/pw/ABLVV87pfEAVxlsSXozMg-9SV4QP-cpguaHcV-Fqt4VnSVDmICqqXZ8eaW3l94RrjT0dL30J-h5kvDTDLe31y7mfuwV2qJl9uBX1gNy9-sQDDYoCaz2QvYoX46XMFssp9jCtBTIvDVA7enQOxUPaLOziG5s1=w1455-h970-s-no?authuser=0',
   },
   {
     id: "2",
     href: "/listing-stay-map",
     name: "",
     taxonomy: "category",
-    thumbnail:'https://lh3.googleusercontent.com/pw/ABLVV870bOpHLEG8dpyXHGVJeq-DAiqiqSumPe99lmgA0iSeVF88Z3cqXHEzdzg4B_76tleWuGFuprgf8oD0kwJdLRKyK99KmxrsB-Q6zyF21BHX4H4eks7TPOCWVInKnSI9PB-0iJg1r37zWcdrCAfG8Gp7=w1640-h923-s-no-gm?authuser=0',
+    thumbnail:'https://lh3.googleusercontent.com/pw/ABLVV87e4nj_AKKpLaR18RgrETA9IosrqeF89eN94JP_BOnwt_aPplvAbWY4_0zh_ERbxLG1N9_lZImg1E3n6TVlyD5kTeIAiIZGCsvD-f97367bqN07AO4DC5lNLpNA5sNEPMy9Jdbl6Ze0cKfGV-Wt2q5c=w1455-h970-s-no?authuser=0',
   },
   {
     id: "3",
     href: "/listing-stay-map",
     name: "",
     taxonomy: "category",
-    thumbnail:'https://lh3.googleusercontent.com/pw/ABLVV853xaKhBdt4LdbUO2PaB0vh883dSdcO8Y3oXuboz6V_Dly0ZAYw5_TKICZJZTPVPcuwZy7ll5KzSP4i9HuMvGTKcGv9Lk8o2yVTI-jXeQReU14Yu-eKfllbK_h_DCo0kgv6NSJbl7tm_jaYuKn3gM58=w1280-h853-s-no-gm?authuser=0',
+    thumbnail:'https://lh3.googleusercontent.com/pw/ABLVV850a3N5wiZWMLF6POS9e_iga9IZZJ_bQSRCSWBJCHd52fzwin-U-FcRN6rYFMGvXBjIMe_BF3ANpMxj2dGjxguwRXoSmGd_wXo2PWi_fiWWFm5nIRxmHWv4rWYAW0fnBu-n5Loj8zaHcu7N2XmfqyxU=w1455-h970-s-no?authuser=0',
   },
   {
     id: "4",
     href: "/listing-stay-map",
     name: "",
     taxonomy: "category",
-    thumbnail:'https://lh3.googleusercontent.com/pw/ABLVV86-hcrAQkSZxIQz356pHnS27k8_QYhDnX6A5nAjFL_beDvY5stq2HFq7YrzmPdpq4w77P1rnrN8MPALkP7JJ4FTXvyfcfyhVdB2zuigDKMcLD9HtFJ3XGA2_A32dzwbu8Gg-8aBAAWtE65aHHH5Mlp5=w1640-h923-s-no-gm?authuser=0',
+    thumbnail:'https://lh3.googleusercontent.com/pw/ABLVV84ww0ThZV4XoQ6H3CHWs3BL6ClZMFZZfJZoxfYlRJCoZIXVKWYp1aRUeITTRfptS6BNzHacTXbzRVLlQjOUGuuyYTOeJ-11FVNnI8rqxi8OqBYsATyHCQECpTou9CbfJhB8VkVySyU8Wue_vw4dUpyd=w1455-h970-s-no?authuser=0',
   },
   {
     id: "5",
@@ -84,12 +84,12 @@ const DEMO_CATS: TaxonomyType[] = [
   },
 ];
 
-const SectionSliderNewCategories: FC<SectionSliderNewCategoriesProps> = ({
+const SectionSliderIdolLand: FC<SectionSliderNewCategoriesProps> = ({
   heading = "Sections for discovery",
   subHeading = "Popular Sections to recommends for you",
   className = "",
   itemClassName = "",
-  categories = DEMO_CATS,
+  categories = IDOL,
   itemPerRow = 5,
   categoryCardType = "card3",
   sliderStyle = "style1",
@@ -216,4 +216,4 @@ const SectionSliderNewCategories: FC<SectionSliderNewCategoriesProps> = ({
   );
 };
 
-export default SectionSliderNewCategories;
+export default SectionSliderIdolLand;

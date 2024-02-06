@@ -2,7 +2,7 @@
 
 import React, { FC } from "react";
 import BgGlassmorphism from "@/components/BgGlassmorphism";
-import SectionHero from "../../(server-components)/SectionHero";
+import SectionIdol from "../../(server-components)/SectionIdol";
 
 
 const idol: FC = () => {
@@ -13,7 +13,7 @@ const idol: FC = () => {
     
     <div className="container relative space-y-24 mb-24 lg:space-y-28 lg:mb-28">
       {/* SECTION HERO */}
-      <SectionHero className="pt-10" />
+      <SectionIdol className="pt-10" />
 
     </div>
     

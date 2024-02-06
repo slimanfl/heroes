@@ -2,14 +2,14 @@ import React, { FC } from "react";
 import imagePng from "@/images/sections/3.jpg";
 import Image from "next/image";
 import ButtonPrimary from "@/shared/ButtonPrimary";
-import SectionSliderNewCategories from "@/components/SectionSliderNewCategories";
+import SectionSliderIdolLand from "@/components/SectionSliderIdolLand";
 
 
 export interface SectionHeroProps {
   className?: string;
 }
 
-const SectionHero: FC<SectionHeroProps> = ({ className = "" }) => {
+const SectionIdol: FC<SectionHeroProps> = ({ className = "" }) => {
   return (
     <div
       className={`nc-SectionHero flex flex-col-reverse lg:flex-col relative ${className}`}
@@ -27,7 +27,7 @@ const SectionHero: FC<SectionHeroProps> = ({ className = "" }) => {
           </ButtonPrimary>
         </div>
         <div className="flex-grow ">
-        <SectionSliderNewCategories
+        <SectionSliderIdolLand
               heading=""
               subHeading=""
           categoryCardType="card5"
@@ -39,4 +39,4 @@ const SectionHero: FC<SectionHeroProps> = ({ className = "" }) => {
   );
 };
 
-export default SectionHero;
+export default SectionIdol;
